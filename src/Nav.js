@@ -17,13 +17,17 @@ function Nav() {
         <NavLink className="navbar-brand navbar-brand-custom fw-bold" to={"/"}>
           <img src={logo} alt="Logo" style={{ maxHeight: '100px', paddingTop: '10px' }} />
         </NavLink>
-        <Wrap spacing={2} justifyContent="left">
+        <Wrap spacing={2} justifyContent="center">
                       <WrapItem>
                         <Link href="https://gitlab.com/zshuaeva" isExternal>
                           <Button colorScheme="teal" size='xs'>Git Lab</Button>
                         </Link>
                       </WrapItem>
-
+                      <WrapItem>
+                        <Link href="https://github.com/zshuaeva" isExternal>
+                          <Button colorScheme="teal" size='xs'>Git Hub</Button>
+                        </Link>
+                      </WrapItem>
                       <WrapItem>
                         <Link href="https://linkedin.com/in/joshuaevangelista" isExternal>
                           <Button colorScheme="teal" size='xs'>Linkedin</Button>

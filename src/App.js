@@ -24,31 +24,25 @@ function App() {
     <ChakraProvider theme={theme}>
       <BrowserRouter>
         <Nav />
-
-        <Box textAlign="center" fontSize="xl">
-          <Grid minH="100vh" p={300}>
-            <VStack spacing={5}>
-
+        <Flex justifyContent="center" alignItems="center" style={{ minHeight: "100vh" }}>
+          <Grid p={{ base: 5, md: 10, lg: 300 }}>
+            <VStack spacing={5} alignItems="center">
               <Image
                 src={logo}
                 alt="logo"
                 maxWidth="300px"
-
               />
-              <text>Joshua Evangelista</text>
-              <Flex align="right">
-          <WrapItem>
-            <Link href={resume} target="_blank">
-              <Button colorScheme="teal" size="xs">
-               Open Resume
-              </Button>
-            </Link>
-          </WrapItem>
-            </Flex>
-
+              <Text as="h1">Joshua Evangelista</Text>
+              <WrapItem>
+                <Link href={resume} isExternal>
+                  <Button colorScheme="teal" size="xs">
+                    Open Resume
+                  </Button>
+                </Link>
+              </WrapItem>
             </VStack>
           </Grid>
-        </Box>
+        </Flex>
       </BrowserRouter>
     </ChakraProvider>
   );
