@@ -17,6 +17,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Nav from './Nav';
 import logo from "./LogoLarge.png";
 import resume from './resume.pdf';
+import { Flex } from '@chakra-ui/react';
 
 function App() {
   return (
@@ -25,9 +26,8 @@ function App() {
         <Nav />
 
         <Box textAlign="center" fontSize="xl">
-          <Grid minH="100vh" p={3}>
-            <ColorModeSwitcher justifySelf="flex-end" />
-            <VStack spacing={8}>
+          <Grid minH="100vh" p={300}>
+            <VStack spacing={5}>
 
               <Image
                 src={logo}
@@ -35,62 +35,17 @@ function App() {
                 maxWidth="300px"
 
               />
-              <text>Website coming soon!</text>
+              <text>Joshua Evangelista</text>
+              <Flex align="right">
+          <WrapItem>
+            <Link href={resume} target="_blank">
+              <Button colorScheme="teal" size="xs">
+               Open Resume
+              </Button>
+            </Link>
+          </WrapItem>
+            </Flex>
 
-              <Card maxW='sm'>
-                <CardBody>
-
-                  <Stack mt='6' spacing='3'>
-                    <Heading size='md'>Joshua Evangelista</Heading>
-                    <Text>
-                      Software Engineer
-                    </Text>
-                    <Text color='blue.600' fontSize='2xl'>
-                      San Francisco, CA
-                    </Text>
-                  </Stack>
-                </CardBody>
-                <Divider />
-                <CardFooter>
-                  <Stack direction='column'>
-                    <Wrap spacing={2} justifyContent="center">
-                      <WrapItem>
-                        <Link href="https://gitlab.com/zshuaeva" isExternal>
-                          <Button colorScheme="orange" size='xs'>Git Lab</Button>
-                        </Link>
-                      </WrapItem>
-
-                      <WrapItem>
-                        <Link href="https://linkedin.com/in/joshuaevangelista" isExternal>
-                          <Button colorScheme="linkedin" size='xs'>Linkedin</Button>
-                        </Link>
-                      </WrapItem>
-
-                      <WrapItem>
-                        <Link href="https://instagram.com/disneyland.arw" isExternal>
-                          <Button colorScheme="facebook" size='xs'>Photography</Button>
-                        </Link>
-                      </WrapItem>
-
-
-                      <WrapItem>
-                        <Link href={resume} target="_blank">
-                          <Button colorScheme="teal" size="xs">
-                            Open Resume
-                          </Button>
-                        </Link>
-                      </WrapItem>
-
-                    </Wrap>
-
-                    <p>
-                      <Text>
-                        Javascript | Python | Django | React | FastAPI | MongoDB | CSS | HTML
-                      </Text>
-                    </p>
-                  </Stack>
-                </CardFooter>
-              </Card>
             </VStack>
           </Grid>
         </Box>
