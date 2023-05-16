@@ -5,7 +5,6 @@ import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import logo from './LogoLarge.png';
 import "./Nav.css";
 import { WrapItem, Link, Button, Wrap } from "@chakra-ui/react";
-import resume from './resume.pdf';
 
 function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();

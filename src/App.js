@@ -1,19 +1,15 @@
 import React from 'react';
-import { app } from './firebase'
 import {
   ChakraProvider,
-  Box,
   Text,
   Link,
   VStack,
   Grid,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { Card, CardBody, CardFooter } from '@chakra-ui/react'
-import { Stack } from '@chakra-ui/react';
-import { Heading, Button, Image, Divider, WrapItem, Wrap } from '@chakra-ui/react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import {  Button, Image, WrapItem } from '@chakra-ui/react';
+import { BrowserRouter} from "react-router-dom";
 import Nav from './Nav';
 import logo from "./LogoLarge.png";
 import resume from './resume.pdf';
