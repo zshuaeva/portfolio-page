@@ -1,6 +1,22 @@
-.navbar-brand-custom {
+.navbar-fixed-container {
   color: teal;
-  font-weight: bold;
+  font-size: small;
   padding-left: 10px;
   padding-right: 10px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.nav-resume {
+  align-self: center;
+}
+
+.nightmode-button {
+  display: grid;
+  justify-content: flex-end;
+  align-items: right;
 }

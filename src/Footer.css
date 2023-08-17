@@ -1,0 +1,48 @@
+.footer-text {
+  position: fixed;
+  font-size: xx-small;
+  bottom: 0;
+  z-index: 1000;
+  padding-left: 10px;
+  color: greenyellow;
+  padding-bottom: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-bottom: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-color: teal;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.github-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-color: teal;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.contact-button {
+  max-height: 24px;
+  margin-right: 10px;
+  padding: 2px;
+  background-color: teal;
+  border-radius: 7px;
+}
