@@ -2,16 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+
 }
 
 .contact-form {
   text-align: center;
-  background-color: rgba(128, 128, 128, 0.2);
   border-radius: 15px;
-  max-width: 300px;
   padding: 20px;
+  width: 400px;
   font-weight: bolder;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: 1px solid teal;
 }

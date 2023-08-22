@@ -1,0 +1,37 @@
+.carousel-item {
+
+  height: 350px;
+}
+
+
+.carousel-photo {
+  max-width: 200px;
+  max-height: 200px;
+  align-items: center;
+
+  margin-left: 75px;
+  margin-top: 50px;
+}
+
+.carousel-caption {
+  width: 400px;
+  height: 300px;
+  margin-left: 200px;
+  margin-bottom: 15px;
+  margin-right: -45px;
+}
+
+.stack-container {
+  height: 64px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+
+.carousel-caption h3 {
+  font-weight: bolder ; /* Example color */
+  font-size: 18px; /* Example font size */
+  /* Add other styling properties as needed */
+}

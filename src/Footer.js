@@ -4,9 +4,11 @@ import './Footer.css';
 import { TypeAnimation } from 'react-type-animation';
 import linkedinIcon from './linkedin.ico';
 import githubIcon from './github.svg';
-import { Button } from '@chakra-ui/react';
+import resume from './resume.pdf';
+import { Link, Button } from '@chakra-ui/react';
 
-function Footer() {
+
+function Footer({ handleContactClick, handleProjectsClick }) {
   return (
     <div className="footer-container">
       <div className="footer-text">
@@ -41,12 +43,31 @@ function Footer() {
           </a>
           </div>
 
-          <NavLink to="/contact" className="contact-button-text">
-          <Button className="contact-button" colorScheme='purple' >
-           Contact
-           </Button>
+          <NavLink className="projects-button-text">
+            <Button
+              className="projects-button"
+              colorScheme='purple'
+              onClick={handleProjectsClick}
+            >
+              Projects
+            </Button>
           </NavLink>
 
+          <NavLink className="contact-button-text">
+            <Button
+              className="contact-button"
+              colorScheme='purple'
+              onClick={handleContactClick}
+            >
+              Contact
+            </Button>
+          </NavLink>
+
+          <Link href={resume} isExternal>
+      <Button  className="contact-button" colorScheme='purple'>
+      Resume
+      </Button>
+    </Link>
 
       </div>
     </div>
