@@ -8,7 +8,7 @@
   max-width: 200px;
   max-height: 200px;
   align-items: center;
-
+  border-radius: 7px;
   margin-left: 75px;
   margin-top: 50px;
 }
@@ -19,6 +19,7 @@
   margin-left: 200px;
   margin-bottom: 15px;
   margin-right: -45px;
+  text-align: left;
 }
 
 .stack-container {
@@ -31,7 +32,8 @@
 }
 
 .carousel-caption h3 {
-  font-weight: bolder ; /* Example color */
-  font-size: 18px; /* Example font size */
-  /* Add other styling properties as needed */
+  font-weight: bolder ;
+  font-size: 20px;
+  text-decoration: underline;
+  color: rgba(105, 105, 255, 0.658)
 }
