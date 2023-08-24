@@ -10,13 +10,13 @@
   width: 100%;
 }
 
-
 .nav-resume {
   align-self: center;
 }
 
-.nightmode-button {
-  display: grid;
-  justify-content: flex-end;
-  align-items: right;
+.dark-mode-button {
+  border: 10px;
+  margin-right: 25px;
+  border-radius: 5px;
+  padding: 2px 2px 2px 2px;
 }

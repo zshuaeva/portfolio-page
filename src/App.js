@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import {
-  ChakraProvider,
-  theme,
-} from '@chakra-ui/react';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
 import { Flex } from '@chakra-ui/react';
@@ -15,24 +12,23 @@ import stryker from './stryker.png';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useColorMode } from '@chakra-ui/react';
 
-
 function App() {
   const [selectedContent, setSelectedContent] = useState(<Bio />);
 
   const handleContactClick = () => {
-    console.log('this should work')
-    setSelectedContent(<Contact />)
+    console.log('this should work');
+    setSelectedContent(<Contact />);
   };
 
   const handleNavClick = () => {
-    console.log('back to bio')
+    console.log('back to bio');
     setSelectedContent(<Bio />);
   };
 
   const handleProjectsClick = () => {
-    console.log(' got to projects')
-    setSelectedContent(<Projects />)
-  }
+    console.log(' got to projects');
+    setSelectedContent(<Projects />);
+  };
 
   return (
     <ChakraProvider theme={theme}>
@@ -41,16 +37,23 @@ function App() {
         <Routes>
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/" element={<MainContent selectedContent={selectedContent} />} />
+          <Route
+            path="/"
+            element={<MainContent selectedContent={selectedContent} />}
+          />
         </Routes>
-        <Footer className="sticky-footer" handleContactClick={ handleContactClick } handleProjectsClick={ handleProjectsClick } />
+        <Footer
+          className="sticky-footer"
+          handleContactClick={handleContactClick}
+          handleProjectsClick={handleProjectsClick}
+        />
       </BrowserRouter>
     </ChakraProvider>
   );
 }
 
 function MainContent({ selectedContent }) {
-  const { colorMode, toggleColorMode } = useColorMode('dark');
+  const { colorMode, toggleColorMode } = useColorMode('light');
 
   return (
     <Flex
@@ -58,23 +61,13 @@ function MainContent({ selectedContent }) {
       alignItems="center"
       style={{ minHeight: '100vh' }}
     >
-      <img
-        src={stryker}
-        alt="stryker"
-        className='stryker-logo'
-      />
+      <img src={stryker} alt="stryker" className="stryker-logo" />
       <div className="dark-mode-button">
-      <button
-          onClick={toggleColorMode}
-          className="nightmode-button"
-          style={{ paddingRight: '16px' }}
-        >
-          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+        <button onClick={toggleColorMode} className="nightmode-button">
+          {colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
         </button>
       </div>
-      <div className="bio-box-container">
-        {selectedContent}
-      </div>
+      <div className="bio-box-container">{selectedContent}</div>
     </Flex>
   );
 }

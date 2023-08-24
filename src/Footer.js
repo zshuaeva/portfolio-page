@@ -7,7 +7,6 @@ import githubIcon from './github.svg';
 import resume from './resume.pdf';
 import { Link, Button } from '@chakra-ui/react';
 
-
 function Footer({ handleContactClick, handleProjectsClick }) {
   return (
     <div className="footer-container">
@@ -21,7 +20,7 @@ function Footer({ handleContactClick, handleProjectsClick }) {
             "========> print('LinkedIn')",
             1000,
             "========> print('GitHub')",
-            1000
+            1000,
           ]}
           wrapper="span"
           speed={50}
@@ -32,43 +31,50 @@ function Footer({ handleContactClick, handleProjectsClick }) {
 
       <div className="footer-links">
         <div>
-          <a href="https://www.linkedin.com/in/joshuaevangelista/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/in/joshuaevangelista/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedinIcon} alt="LinkedIn" className="linkedin-icon" />
           </a>
-          </div>
+        </div>
 
-          <div>
-          <a href="https://github.com/zshuaeva" target="_blank" rel="noopener noreferrer">
+        <div>
+          <a
+            href="https://github.com/zshuaeva"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={githubIcon} alt="GitHub" className="github-icon" />
           </a>
-          </div>
+        </div>
 
-          <NavLink className="projects-button-text">
-            <Button
-              className="projects-button"
-              colorScheme='purple'
-              onClick={handleProjectsClick}
-            >
-              Projects
-            </Button>
-          </NavLink>
+        <NavLink className="projects-button-text">
+          <Button
+            className="projects-button"
+            colorScheme="purple"
+            onClick={handleProjectsClick}
+          >
+            Projects
+          </Button>
+        </NavLink>
 
-          <NavLink className="contact-button-text">
-            <Button
-              className="contact-button"
-              colorScheme='purple'
-              onClick={handleContactClick}
-            >
-              Contact
-            </Button>
-          </NavLink>
+        <NavLink className="contact-button-text">
+          <Button
+            className="contact-button"
+            colorScheme="purple"
+            onClick={handleContactClick}
+          >
+            Contact
+          </Button>
+        </NavLink>
 
-          <Link href={resume} isExternal>
-      <Button  className="contact-button" colorScheme='purple'>
-      Resume
-      </Button>
-    </Link>
-
+        <Link href={resume} isExternal>
+          <Button className="contact-button" colorScheme="purple">
+            Resume
+          </Button>
+        </Link>
       </div>
     </div>
   );

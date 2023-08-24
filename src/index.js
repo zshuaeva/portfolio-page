@@ -9,8 +9,6 @@ import 'semantic-ui-css/semantic.min.css';
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
 
-
-
 root.render(
   <StrictMode>
     <ColorModeScript />

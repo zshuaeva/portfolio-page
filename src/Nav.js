@@ -1,13 +1,11 @@
-
 import { NavLink } from 'react-router-dom';
 import logo from './LogoLarge.png';
 import './Nav.css';
 
-
-function Nav( { handleNavClick } ) {
+function Nav({ handleNavClick }) {
   return (
     <>
-    <nav id="nav" className="navbar-fixed-container" onClick={handleNavClick}>
+      <nav id="nav" className="navbar-fixed-container" onClick={handleNavClick}>
         <NavLink className="nav-logo" to={'/'}>
           <img
             src={logo}
@@ -16,11 +14,11 @@ function Nav( { handleNavClick } ) {
               maxHeight: '75px',
               paddingTop: '10px',
               paddingLeft: '10px',
-            }} />
+            }}
+          />
           Joshua Evangelista
         </NavLink>
-
-    </nav>
+      </nav>
     </>
   );
 }

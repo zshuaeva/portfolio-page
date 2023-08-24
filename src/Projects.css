@@ -1,8 +1,6 @@
 .carousel-item {
-
   height: 350px;
 }
-
 
 .carousel-photo {
   max-width: 200px;
@@ -32,8 +30,8 @@
 }
 
 .carousel-caption h3 {
-  font-weight: bolder ;
+  font-weight: bolder;
   font-size: 20px;
   text-decoration: underline;
-  color: rgba(105, 105, 255, 0.658)
+  color: rgba(105, 105, 255, 0.658);
 }

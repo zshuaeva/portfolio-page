@@ -18,11 +18,10 @@
   overflow: auto;
 }
 
-
 .stryker-logo {
   display: flex;
-  max-height: 650px;
-  max-width: 100%; /* Set maximum width to 100% */
+  max-height: 375px;
+  max-width: 100%;
   padding-top: 10px;
   padding-left: 80px;
   padding-bottom: 40px;
