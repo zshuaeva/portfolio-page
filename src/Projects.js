@@ -63,7 +63,7 @@ function Projects() {
         [css, 'CSS'],
         [html, 'HTML5'],
         [docker, 'Docker'],
-        [sql, 'PostgresSQL'],
+        [postgres, 'PostgresSQL'],
       ],
       url: 'https://github.com/zshuaeva/overratedonline',
     },
