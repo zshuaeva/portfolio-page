@@ -13,3 +13,8 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.ui.form .field > label,
+.custom-input-field label {
+  color: inherit !important;
+}

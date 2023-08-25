@@ -54,8 +54,8 @@ function MainContent({ selectedContent }) {
   return (
     <div
       className="main-page-content"
-      justifyContent="center"
-      alignItems="center"
+      justifycontent="center"
+      alignitems="center"
       style={{ minHeight: '100vh' }}
     >
       <img src={stryker} alt="stryker" className="stryker-logo" />

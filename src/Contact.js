@@ -23,7 +23,7 @@ function Contact() {
         console.log(error.text);
         Swal.fire({
           icon: 'error',
-          title: 'Ooops, something went wrong',
+          title: 'Oops, something went wrong',
           text: error.text,
         });
       });
@@ -32,7 +32,7 @@ function Contact() {
 
   return (
     <div className="page-container">
-      <div className="contact-form">
+      <div className="contact-form custom-input-field">
         <Form onSubmit={handleOnSubmit}>
           <Form.Field
             id="form-input-control-email"
