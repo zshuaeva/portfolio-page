@@ -56,3 +56,9 @@
   background-color: teal;
   border-radius: 7px;
 }
+
+@media (max-width: 980px) {
+  .footer-text {
+    display: none;
+  }
+}

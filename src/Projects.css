@@ -23,15 +23,6 @@
   text-align: left;
 }
 
-.stack-container {
-  display: flex;
-  max-width: 10%;
-  min-width: 0%;
-  align-items: center;
-  gap: 10px;
-  padding-bottom: 25px;
-}
-
 .stack-icon {
   max-height: 64px;
   min-width: 75%;
@@ -53,6 +44,14 @@
 }
 
 .carousel-control-next {
-  display: grid;
+  display: flex;
   margin-right: 5.5%;
+}
+.stack-container {
+  display: flex;
+  max-width: 10%;
+  min-width: 0%;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 25px;
 }
