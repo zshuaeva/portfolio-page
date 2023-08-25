@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './Nav';
-import { Flex } from '@chakra-ui/react';
 import Projects from './Projects';
 import Bio from './bio';
 import Contact from './Contact';
@@ -16,17 +15,14 @@ function App() {
   const [selectedContent, setSelectedContent] = useState(<Bio />);
 
   const handleContactClick = () => {
-    console.log('this should work');
     setSelectedContent(<Contact />);
   };
 
   const handleNavClick = () => {
-    console.log('back to bio');
     setSelectedContent(<Bio />);
   };
 
   const handleProjectsClick = () => {
-    console.log(' got to projects');
     setSelectedContent(<Projects />);
   };
 
@@ -53,10 +49,11 @@ function App() {
 }
 
 function MainContent({ selectedContent }) {
-  const { colorMode, toggleColorMode } = useColorMode('light');
+  const { colorMode, toggleColorMode } = useColorMode();
 
   return (
-    <Flex
+    <div
+      className="main-page-content"
       justifyContent="center"
       alignItems="center"
       style={{ minHeight: '100vh' }}
@@ -64,11 +61,11 @@ function MainContent({ selectedContent }) {
       <img src={stryker} alt="stryker" className="stryker-logo" />
       <div className="dark-mode-button">
         <button onClick={toggleColorMode} className="nightmode-button">
-          {colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
+          {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
         </button>
       </div>
       <div className="bio-box-container">{selectedContent}</div>
-    </Flex>
+    </div>
   );
 }
 

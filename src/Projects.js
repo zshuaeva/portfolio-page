@@ -3,7 +3,7 @@ import CruiseControl from './cruisecontrol.png';
 import './Projects.css';
 import overrated from './overrated.png';
 import clonebnb from './clonebnb.png';
-import js from './javascript.ico';
+import js from './javascript.png';
 import dj from './django.ico';
 import sql from './sql.ico';
 import css from './css.png';
@@ -13,12 +13,16 @@ import docker from './docker.ico';
 import postgres from './postgres.ico';
 import html from './html.ico';
 import { Tooltip } from 'react-tooltip';
-import 'react-tooltip/dist/react-tooltip.css';
+import { useColorMode } from '@chakra-ui/react';
+import styles from './Projects.css';
 
 function Projects() {
+  const { colorMode } = useColorMode();
+  const textClass = colorMode === 'dark' ? styles.darkText : styles.lightText;
+
   const myProjects = [
     {
-      name: 'Clone b&b',
+      name: 'Clone BnB',
       description:
         'Clone BnB is a personal project designed to link homeowners and short-term vacation renters. Developed under a rigorous two-day deadline, the project successfully achieved a minimum viable product. The system architecture features models adept at handling foreign keys, crucial for creating rental properties and amenities. Leveraging the Django backend, it incorporates a user authentication system that facilitates user sign up and login processes.',
       img: clonebnb,
@@ -103,12 +107,13 @@ function Projects() {
                   {project.name}
                 </a>
               </h3>
-              <p>{project.description}</p>
+              <p className={textClass}>{project.description}</p>
               <div className="stack-container">
                 {project.stack &&
                   project.stack.map((image, imageIndex) => (
                     <>
                       <img
+                        className="stack-icon"
                         key={imageIndex}
                         src={image[0]}
                         alt={`Stack ${imageIndex}`}

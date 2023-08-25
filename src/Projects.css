@@ -1,10 +1,13 @@
 .carousel-item {
   height: 350px;
+  min-height: 10%;
 }
 
 .carousel-photo {
+  display: flex;
   max-width: 200px;
   max-height: 200px;
+  min-height: 10%;
   align-items: center;
   border-radius: 7px;
   margin-left: 75px;
@@ -21,12 +24,17 @@
 }
 
 .stack-container {
-  height: 64px;
-  width: 50px;
   display: flex;
+  max-width: 10%;
+  min-width: 0%;
   align-items: center;
   gap: 10px;
   padding-bottom: 25px;
+}
+
+.stack-icon {
+  max-height: 64px;
+  min-width: 75%;
 }
 
 .carousel-caption h3 {
@@ -34,4 +42,20 @@
   font-size: 20px;
   text-decoration: underline;
   color: rgba(105, 105, 255, 0.658);
+}
+
+.carousel-caption p {
+  font-weight: lighter;
+}
+
+.carousel-control-next {
+  display: grid;
+  margin-right: 5.5%;
+}
+
+.light-text {
+  color: black;
+}
+.dark-text {
+  color: white;
 }

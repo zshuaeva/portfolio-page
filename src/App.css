@@ -1,3 +1,9 @@
+.main-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sticky-nav {
   position: fixed;
   top: 0;
@@ -7,23 +13,31 @@
 .bio-box-container {
   display: grid;
   font-weight: bold;
-  max-width: 900px;
-  width: 80%;
+  width: 900px;
   height: 400px;
-  min-width: 455px;
+  min-height: 20%;
+  min-width: 20%;
   background-color: rgba(128, 128, 128, 0.5);
   border-radius: 25px;
   padding: 25px;
-  margin-right: 80px;
   overflow: auto;
 }
 
 .stryker-logo {
   display: flex;
   max-height: 375px;
-  max-width: 100%;
+  max-width: 25%;
   padding-top: 10px;
   padding-left: 80px;
   padding-bottom: 40px;
   margin-right: 30px;
+}
+
+.nightmode-button {
+  color: #805ad5;
+  font-size: larger;
+}
+
+.nightmode-button:focus {
+  outline: none;
 }
