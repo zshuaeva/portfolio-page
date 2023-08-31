@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import logo from './LogoLarge.png';
-import './Nav.css';
+import logo from '../icons/LogoLarge.png';
+import '../stylesheets/Nav.css';
 
 function Nav({ handleNavClick }) {
   return (

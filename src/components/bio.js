@@ -1,4 +1,4 @@
-import './bio.css';
+import '../stylesheets/bio.css';
 function Bio() {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
-import './Contact.css';
+import '../stylesheets/Contact.css';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
 const SERVICE_ID = 'service_iczzxjs';

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { ChakraProvider, theme } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Nav from './Nav';
-import Projects from './Projects';
-import Bio from './bio';
-import Contact from './Contact';
-import Footer from './Footer';
+import Nav from './components/Nav';
+import Projects from './components/Projects';
+import Bio from './components/bio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
-import stryker from './stryker.png';
+import stryker from './icons/stryker.png';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { useColorMode } from '@chakra-ui/react';
 

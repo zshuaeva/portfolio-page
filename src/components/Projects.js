@@ -1,17 +1,17 @@
 import React from 'react';
-import CruiseControl from './cruisecontrol.png';
-import './Projects.css';
-import overrated from './overrated.png';
-import clonebnb from './clonebnb.png';
-import js from './javascript.png';
-import dj from './django.ico';
-import sql from './sql.ico';
-import css from './css.png';
-import py from './python.png';
-import react from './React.ico';
-import docker from './docker.ico';
-import postgres from './postgres.ico';
-import html from './html.ico';
+import CruiseControl from '../icons/cruisecontrol.png';
+import '../stylesheets/Projects.css';
+import overrated from '../icons//overrated.png';
+import clonebnb from '../icons//clonebnb.png';
+import js from '../icons//javascript.png';
+import dj from '../icons//django.ico';
+import sql from '../icons//sql.ico';
+import css from '../icons//css.png';
+import py from '../icons//python.png';
+import react from '../icons//React.ico';
+import docker from '../icons//docker.ico';
+import postgres from '../icons//postgres.ico';
+import html from '../icons//html.ico';
 import { Tooltip } from 'react-tooltip';
 
 function Projects() {

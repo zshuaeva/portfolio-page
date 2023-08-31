@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Footer.css';
+import '../stylesheets/Footer.css';
 import { TypeAnimation } from 'react-type-animation';
-import linkedinIcon from './linkedin.ico';
-import githubIcon from './github.svg';
-import resume from './resume.pdf';
+import linkedinIcon from '../icons/linkedin.ico';
+import githubIcon from '../icons/github.svg';
+import resume from '../resume.pdf';
 import { Link, Button } from '@chakra-ui/react';
 
 function Footer({ handleContactClick, handleProjectsClick }) {
