@@ -24,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 .firebase.js
+.firebaserc
+firebase.json
+.prettierrc
+.prettierrc'
+resume.pdf
