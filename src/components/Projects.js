@@ -1,21 +1,39 @@
 import React from 'react';
-import CruiseControl from '../icons/cruisecontrol.png';
 import '../stylesheets/Projects.css';
-import overrated from '../icons//overrated.png';
-import clonebnb from '../icons//clonebnb.png';
-import js from '../icons//javascript.png';
-import dj from '../icons//django.ico';
-import sql from '../icons//sql.ico';
-import css from '../icons//css.png';
-import py from '../icons//python.png';
-import react from '../icons//React.ico';
-import docker from '../icons//docker.ico';
-import postgres from '../icons//postgres.ico';
-import html from '../icons//html.ico';
+
+import CruiseControl from '../icons/projectPhotos/cruisecontrol.png';
+import overrated from '../icons/projectPhotos/overrated.png';
+import clonebnb from '../icons/projectPhotos/clonebnb.png';
+import closetify from '../icons/projectPhotos/closetify.png';
+import carcar from '../icons/projectPhotos/carcar.png';
+import LogoLarge from '../icons/LogoLarge.png';
+
+import js from '../icons/javascript.png';
+import dj from '../icons/django.ico';
+import sql from '../icons/sql.ico';
+import css from '../icons/css.png';
+import py from '../icons/python.png';
+import react from '../icons/React.ico';
+import docker from '../icons/docker.ico';
+import postgres from '../icons/postgres.ico';
+import html from '../icons/html.ico';
 import { Tooltip } from 'react-tooltip';
 
 function Projects() {
   const myProjects = [
+    {
+      name: 'Portfolio Page',
+      description:
+        'This portfolio page was built as a single page application using React.js, CSS stylesheets, Bootstrap, Materials UI, Google Firebase, and Semantic UI. Crafted for simplicity to effectively showcase my resume, LinkedIn profile, projects, and direct contact. The icons listed in each project resemble the tech stack used for each respective project; hover over the icons to view!',
+      img: LogoLarge,
+      stack: [
+        [react, 'React.js'],
+        [js, 'Javascript'],
+        [css, 'CSS'],
+        [html, 'HTML5'],
+      ],
+      url: 'https://github.com/zshuaeva/portfolio-page',
+    },
     {
       name: 'Clone BnB',
       description:
@@ -65,6 +83,38 @@ function Projects() {
         [postgres, 'PostgresSQL'],
       ],
       url: 'https://github.com/zshuaeva/overratedonline',
+    },
+    {
+      name: 'CarCar',
+      description:
+        'Streamline your dealership operations effortlessly with this innovative application! Simplifying the management of your dynamic inventory and service organization, this platform empowers you to seamlessly add vehicle makes and models to your database. Once integrated, expanding your dealership inventory using VIN. Our system also provides tools to assess your salespersons sales records. Furthermore, you can effortlessly register technicians and cultivate a loyal customer base for convenient appointment scheduling.',
+      img: carcar,
+      stack: [
+        [react, 'React.js'],
+        [js, 'Javascript'],
+        [py, 'Python'],
+        [css, 'CSS'],
+        [html, 'HTML5'],
+        [docker, 'Docker'],
+        [postgres, 'PostgreSQL'],
+      ],
+      url: 'https://github.com/zshuaeva/Car-Car',
+    },
+    {
+      name: 'Closetify!',
+      description:
+        'Discover the epitome of organization with our microservice-based Personal Inventory Management. Seamlessly catalog and exhibit your hats and shoes with intricate details and vibrant photos. Elevate your collection curation and redefine your connection with your items.',
+      img: closetify,
+      stack: [
+        [react, 'React.js'],
+        [js, 'Javascript'],
+        [py, 'Python'],
+        [css, 'CSS'],
+        [html, 'HTML5'],
+        [docker, 'Docker'],
+        [sql, 'SQLite3'],
+      ],
+      url: 'https://github.com/zshuaeva/Closetify',
     },
   ];
 
