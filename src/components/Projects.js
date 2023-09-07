@@ -6,6 +6,7 @@ import overrated from '../icons/projectPhotos/overrated.png';
 import clonebnb from '../icons/projectPhotos/clonebnb.png';
 import closetify from '../icons/projectPhotos/closetify.png';
 import carcar from '../icons/projectPhotos/carcar.png';
+import golfpilot from '../icons/projectPhotos/golfpilot.png';
 import LogoLarge from '../icons/LogoLarge.png';
 
 import js from '../icons/javascript.png';
@@ -17,6 +18,7 @@ import react from '../icons/React.ico';
 import docker from '../icons/docker.ico';
 import postgres from '../icons/postgres.ico';
 import html from '../icons/html.ico';
+import mongo from '../icons/mongodb.svg';
 import { Tooltip } from 'react-tooltip';
 
 function Projects() {
@@ -33,6 +35,20 @@ function Projects() {
         [html, 'HTML5'],
       ],
       url: 'https://github.com/zshuaeva/portfolio-page',
+    },
+    {
+      name: 'Golf Pilot',
+      description:
+        "Embracing golf as a recently aquired hobby, I encountered apps with pricey paywalls. Inspired, I developed a mobile score keeper for on-course convenience. It provides real-time updates, telling you if you're 'shooting par,' 'X-Over-Par,' or 'X-Under-Par.' It's an ongoing project to save your scores for each course for simple record keeping.",
+      img: golfpilot,
+      stack: [
+        [react, 'React.js'],
+        [js, 'Javascript'],
+        [css, 'CSS'],
+        [html, 'HTML5'],
+        [mongo, 'MongoDB'],
+      ],
+      url: 'https://github.com/zshuaeva/golfpilot',
     },
     {
       name: 'Clone BnB',
