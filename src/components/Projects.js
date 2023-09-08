@@ -39,7 +39,7 @@ function Projects() {
     {
       name: 'Golf Pilot',
       description:
-        "Embracing golf as a recently aquired hobby, I encountered apps with pricey paywalls. Inspired, I developed a mobile score keeper for on-course convenience. It provides real-time updates, telling you if you're 'shooting par,' 'X-Over-Par,' or 'X-Under-Par.' It's an ongoing project to save your scores for each course for simple record keeping.",
+        "Embracing golf as a recently acquired hobby, I encountered apps with pricey paywalls. Inspired, I developed a mobile score keeper for on-course convenience. It provides real-time updates, telling you if you're 'shooting par,' 'X-Over-Par,' or 'X-Under-Par.' It's an ongoing project to save your scores for each course for simple record keeping.",
       img: golfpilot,
       stack: [
         [react, 'React.js'],
