@@ -15,12 +15,11 @@
 }
 
 .carousel-caption {
-  width: 400px;
-  height: 300px;
-  margin-left: 200px;
+  width: 70%;
+  height: 82%;
   margin-bottom: 15px;
-  margin-right: -45px;
   text-align: left;
+  overflow: auto;
 }
 
 .stack-icon {
@@ -54,4 +53,14 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 25px;
+}
+
+@media (max-width: 980px) {
+  .carousel-photo {
+    display: none;
+  }
+}
+
+.modal-link {
+  align-content: right;
 }
