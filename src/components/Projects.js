@@ -21,6 +21,8 @@ import html from '../icons/html.ico';
 import mongo from '../icons/mongodb.svg';
 import { Tooltip } from 'react-tooltip';
 
+import PhotoModal from './modal';
+
 function Projects() {
   const myProjects = [
     {
@@ -158,11 +160,6 @@ function Projects() {
               key={index}
               className={`carousel-item ${index === 0 ? 'active' : ''}`}
             >
-              <img
-                className="carousel-photo"
-                src={project.img}
-                alt={`Slide ${index}`}
-              />
               <div className="carousel-caption custom-carousel-caption">
                 <h3>
                   <a
@@ -173,6 +170,9 @@ function Projects() {
                     {project.name}
                   </a>
                 </h3>
+                <div className="modal-link">
+                  <PhotoModal imageSrc={project.img} />
+                </div>
                 <p>{project.description}</p>
                 <div className="stack-container">
                   {project.stack &&
