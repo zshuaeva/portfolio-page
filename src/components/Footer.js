@@ -4,7 +4,7 @@ import '../stylesheets/Footer.css';
 import { TypeAnimation } from 'react-type-animation';
 import linkedinIcon from '../icons/linkedin.ico';
 import githubIcon from '../icons/github.svg';
-import resume from '../resume.pdf';
+import resume from '../Joshua_Evangelista_Resume.pdf';
 import { Link, Button } from '@chakra-ui/react';
 
 function Footer({ handleContactClick, handleProjectsClick }) {
